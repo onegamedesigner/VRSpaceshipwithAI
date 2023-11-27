@@ -16,10 +16,10 @@ public class VR_menu : MonoBehaviour
     
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Four))
+        /*if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             UI.SetActive(!UI.activeSelf);
-        }
+        }*/
         
     }
 }
