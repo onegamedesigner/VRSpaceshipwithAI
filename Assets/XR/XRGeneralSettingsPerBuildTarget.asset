@@ -14,6 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: -529766783051963513}
   m_InitManagerOnStart: 1
+--- !u!114 &-738496960848733801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: WebGL Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: 750235426991508763}
+  m_InitManagerOnStart: 1
 --- !u!114 &-529766783051963513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,7 +45,6 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: 5b9cd3a37dc159848a2d5cee27fcdb3e, type: 2}
-  - {fileID: 11400000, guid: c6db24e165f64fd4f8c5996bc0c103fd, type: 2}
 --- !u!114 &-307329425702157187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +61,7 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-  - {fileID: 11400000, guid: c6db24e165f64fd4f8c5996bc0c103fd, type: 2}
+  - {fileID: 11400000, guid: 5b9cd3a37dc159848a2d5cee27fcdb3e, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,10 +74,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
-  Keys: 0700000001000000
+  Keys: 07000000010000000d000000
   Values:
   - {fileID: 8026921281885425003}
   - {fileID: -2363025207615710123}
+  - {fileID: -738496960848733801}
+--- !u!114 &750235426991508763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: WebGL Providers
+  m_EditorClassIdentifier: 
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders: []
 --- !u!114 &8026921281885425003
 MonoBehaviour:
   m_ObjectHideFlags: 0
