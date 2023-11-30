@@ -37,7 +37,7 @@ namespace VRSpaceShip.Locomotion
         }
 
         /// <summary>
-        /// Gets or sets the button event type that trigger the event.
+        ///     Gets or sets the button event type that trigger the event.
         /// </summary>
         public UxrButtonEventType ButtonEventType
         {
@@ -51,13 +51,14 @@ namespace VRSpaceShip.Locomotion
         /// <inheritdoc />
         public override string ToString()
         {
-            return $"Event type: button(s): {button}";
+            return $"Event type: {buttonEventType} button(s): {button}";
         }
 
         #endregion
 
         public void Invoke()
         {
+            
             @event?.Invoke();
         }
     }
