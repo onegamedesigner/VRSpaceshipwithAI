@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-namespace VRSpaceShip.Locomotion
+namespace VRSpaceShip.AvatarActions
 {
     [Serializable]
     public class ControllerEvent

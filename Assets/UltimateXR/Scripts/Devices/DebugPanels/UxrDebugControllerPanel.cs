@@ -153,12 +153,12 @@ namespace UltimateXR.Devices.DebugPanels
                 if (_avatarControllerInput.SetupType == UxrControllerSetupType.Single)
                 {
                     // Single controller setup. Both sides will return the same name. 
-                    _textControllerNames.text = $"Controller: {leftName}";
+                    //_textControllerNames.text = $"Controller: {leftName}";
                 }
                 else if (_avatarControllerInput.SetupType == UxrControllerSetupType.Dual)
                 {
                     // Dual controller setup.
-                    _textControllerNames.text = $"Left controller: {leftName}, right controller: {rightName}";
+                    //_textControllerNames.text = $"Left controller: {leftName}, right controller: {rightName}";
                 }
             }
         }
@@ -174,13 +174,13 @@ namespace UltimateXR.Devices.DebugPanels
 
             if (_avatar == null || _avatarControllerInput == null)
             {
-                _textDeviceName.text = $"No {nameof(UxrAvatar)} with an active {nameof(UxrControllerInput)} component found";
+                //_textDeviceName.text = $"No {nameof(UxrAvatar)} with an active {nameof(UxrControllerInput)} component found";
                 return;
             }
 
             // Device strings
 
-            _textDeviceName.text = $"Device: {UxrTrackingDevice.HeadsetDeviceName}, Loaded: {XRSettings.loadedDeviceName}";
+            //_textDeviceName.text = $"Device: {UxrTrackingDevice.HeadsetDeviceName}, Loaded: {XRSettings.loadedDeviceName}";
 
             UpdateControllerStrings();
 

@@ -7,9 +7,10 @@
 using System.Collections.Generic;
 using UltimateXR.Avatar;
 using UltimateXR.Devices;
+using UltimateXR.Devices.Visualization;
 using UnityEngine;
 
-namespace VRSpaceShip.Locomotion
+namespace VRSpaceShip.AvatarActions
 {
     public class AvatarControllerActions : MonoBehaviour
     {
@@ -31,7 +32,8 @@ namespace VRSpaceShip.Locomotion
         {
             UxrAvatar          avatar          = UxrAvatar.LocalAvatar;
             UxrControllerInput controllerInput = avatar != null ? avatar.ControllerInput : null;
-
+            UxrControllerHand handTracking;
+            
             if (avatar != _avatar || controllerInput != _avatarControllerInput)
             {
                 // Unsubscribe from the current avatar controller events.
